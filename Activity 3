@@ -1,0 +1,34 @@
+<?php
+  $Grade_Centeno = 90.2;
+  $LetterGrade_Centeno = "";
+  $Remarks_Centeno = "";
+
+  
+
+  if($Grade_Centeno >= 74.5) {
+     $Remarks_Centeno = "Passed";
+  }
+  else {
+     $Remarks_Centeno = "Failed";
+  }
+  
+  if($Grade_Centeno >= 90 && $Grade_Centeno <= 100 ) {
+    $LetterGrade_Centeno = "A";
+  }
+  else if($Grade_Centeno >= 80 && $Grade_Centeno <= 89) {
+    $LetterGrade_Centeno = "B";   
+  }
+  else if($Grade_Centeno >= 70 && $Grade_Centeno <= 79) {
+    $LetterGrade_Centeno = "C";
+  }
+  else if($Grade_Centeno >= 60 && $Grade_Centeno <= 69) {
+    $LetterGrade_Centeno = "D";
+  }
+  else if($Grade_Centeno >= 0 && $Grade_Centeno <= 59) {
+    $LetterGrade_Centeno = "F";
+  }
+  
+  echo "Remarks: ". $Grade_Centeno . "<br>";
+  echo "Letter Grade: " . $LetterGrade_Centeno;
+
+?>
